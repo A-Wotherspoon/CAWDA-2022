@@ -10,13 +10,16 @@ nav {
 }
 
 header, section {
-    flex: 3 150px;
+    flex: 35vw;
+    min-height: 200px;
     background: #b2d6ff;
+
 }
 
 main {
-    flex: 6 300px;
+    /* flex: 6 300px; */
     background: #eaedf0;
+    padding: 0.5rem;
 }
 
 #signUp {
@@ -39,4 +42,51 @@ header, section, nav {
     justify-content: center;
     align-items: center;
     display: flex;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+/* medium */
+@media screen and (min-width: 500px) {
+    nav {
+        background: yellow;
+        flex: 100%;
+        min-height: 50px;
+    }
+
+    article {
+        flex-flow: row wrap;
+    }
+
+    #signUp {
+        height: 50vw;
+    }
+
+    .feature {
+        /* flex: 250px; */
+        height: 50vw;
+    }
+}
+
+@media screen and (min-width: 748px) {
+    #signUp {
+        flex: 100%;
+        max-height: 500px;
+        order: -1;
+    }
+
+    nav, header {
+        order: -3;
+        flex: 100%;
+    }
+
+    .feature {
+        flex: 1;
+        order: -2;
+        max-height: 500px;
+    }
 }
