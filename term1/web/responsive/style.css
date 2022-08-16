@@ -1,0 +1,35 @@
+
+
+
+article {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background: #5995da;
+}
+
+header {
+    background: #b2d6ff;
+}
+
+main {
+    background: #eaedf0;
+}
+
+#signUp {
+    background: #d6e9fe;
+}
+
+.feature:nth-last-of-type(1) {
+    background: #f5cf8e;
+}
+
+.feature:nth-last-of-type(2) {
+    background: #f09a9d;
+}
+
+.feature:nth-last-of-type(3) {
+    background: #c8c6fa;
+}
