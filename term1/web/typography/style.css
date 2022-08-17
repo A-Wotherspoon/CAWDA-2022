@@ -1,3 +1,41 @@
 h1 {
-    color: red;
+    color: rgb(71, 226, 79);
+}
+
+p {
+    font-size: 1rem;
+    /* font-weight: 10; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p em {
+    font-size: 1rem;
+}
+
+.bgimage {
+    width: 200px;
+    height: 200px;
+    background: url('https://placekitten.com/400') green 50% center no-repeat;
+    background-size: cover;
+    border-radius: 1rem; /* match border radius with padding */
+    padding: 1rem;
+    color: white;
+    font-size: 0.9rem;
+    box-shadow: 1rem 0rem 1rem rgba(22, 139, 143, 0.493);
+
+}
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font: bold;
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 0, 0.199);
+    position: relative;
+    top: -100px; 
+    left: 50px;
+    /* opacity: 0.25; */
 }
