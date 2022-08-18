@@ -10,6 +10,63 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+nav {
+    /* margin-left: auto; */
+}
+
+nav a {
+    color: #6a6a6a;
+    font-size: 1rem;
+    font-family: Lato, sans-serif;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+#brand {
+    height: 3vw;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    background: teal;
+    padding: 2rem;
+    align-items: center;
+    background: url(images/zebra-hero.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#hero img {
+    height: 10vw;
+    width: 10vw;
+    border-radius: 50%;
+}
+
+#hero h1 {
+    margin: 0.5rem 0;
+    font-family: 'Bree Serif', sans-serif;
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.button {
+    font-family: Lato, sans-serif;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 0.5rem 1rem;
+}
+
 /* 
 #social-links {
     background-color: red;
