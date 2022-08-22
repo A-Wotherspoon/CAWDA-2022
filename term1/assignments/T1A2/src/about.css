@@ -5,6 +5,11 @@ main {
 	flex-direction: row;
 }
 
+h1 {
+	width: 100%;
+	padding: 2rem 2rem 2rem 4rem;
+}
+
 h2 {
 	text-align: center;
 }
