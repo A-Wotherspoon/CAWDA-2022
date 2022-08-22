@@ -5,7 +5,7 @@
 	padding: 0;
 }
 
-body {
+.landing {
 	display: flex;
 	flex-direction: column;
 	background: url(images/elec.jpg) darkgreen no-repeat;
@@ -14,7 +14,7 @@ body {
 	background-position: 0 10vh;
 }
 
-nav {
+#navbar {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -39,25 +39,47 @@ nav {
 }
 
 header {
-	min-height: 30vh;
+	width: 100vw;
+	padding: 4rem 4rem 6rem 4rem;
+	display: flex;
+	justify-content: center;
+	min-height: 35vh;
 	background: white;
 
 }
 
+header img {
+	border-radius: 50%;
+	height: 20vh
+}
+
+header h1 {
+	font-size: 6rem;
+}
+
+.profile_container {
+	padding: 1rem;
+	border-right: 2px solid black;
+}
+
+.header_content {
+	padding: 1rem;
+}
+
 .fadeIn {
-	font-size: 2rem;
+	font-size: 3rem;
 	color:green;
 	opacity: 0;
-	animation: fadeIn ease 3s;
+	animation: fadeIn ease 8s;
 	animation-fill-mode: forwards;
-	animation-delay: 2s;
+	animation-delay: 3s;
 }
 
 .fadeOut {
-	font-size: 2rem;
+	font-size: 3rem;
 	color:red;
-	transform: translateY(-2rem);
-	animation: fadeOut ease 3s;
+	transform: translateY(-3.5rem);
+	animation: fadeOut ease 5s;
 	animation-fill-mode: forwards;
 }
 
@@ -81,7 +103,7 @@ header {
   
 
 #background {
-	height: 50vh;
+	height: 40vh;
 }
 
 #social-links {
