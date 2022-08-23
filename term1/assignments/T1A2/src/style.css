@@ -1,10 +1,12 @@
 
 :root {
 	--primary-color: #2A3740;
-	--secondary-color: #D9b4C1;
-	--background-color: #F2D8DF;
-	--highlight-color: #Bf6363;
-}
+	/* --secondary-color: #D9b4C1; */
+	--secondary-color: #4F738C;
+	/* --background-color: #F2D8DF; */
+	--background-color: #8C6E41;
+	/* --highlight-color: #Bf6363; */
+	--highlight-color: #6B7E8C;}
 
 * {
 	box-sizing: border-box;
@@ -67,6 +69,9 @@ body {
 	width: 100%;
 	display: none;
 	background: #2a3740;
+	top: 0;
+	z-index: 100;
+	position: sticky;
 }
 
 #mobile_toggle {
@@ -99,9 +104,13 @@ body {
 	border-bottom: 2px black solid;
 }
 
+.navbar_spacer {
+	width: 50px;
+}
+
 header {
 	width: 100%;
-	padding: 0rem 0rem 2rem 0rem;
+	padding: 0rem 0rem 1rem 0rem;
 	display: flex;
 	justify-content: center;
 	min-height: 10vh;
@@ -111,6 +120,7 @@ header {
 
 header img {
 	border-radius: 50%;
+	border: 2px solid black;
 	width: min(15vw,200px);
 	min-width: 120px;
 	justify-content: end;
@@ -121,6 +131,7 @@ header h1 {
 	font-size: min(10vw,120px);
 	color: var(--secondary-color);
 }
+
 
 .profile_container {
 	padding: 3rem 1rem 1rem 1rem;
@@ -135,7 +146,7 @@ header h1 {
 	color: var(--secondary-color);
 	font-style: italic;
 	text-align: end;
-	font-size: ;
+
 }
 
 .header_content {
@@ -160,6 +171,23 @@ header h1 {
 	animation-fill-mode: forwards;
 }
 
+.arrow_container {
+	width: 100vw;
+	background: var(--primary-color);
+	text-align: center;
+	padding: 0.5rem;
+}
+
+.down_arrow {
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	display: inline-block;
+	padding: 3px;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+  }
+
+
 @keyframes fadeOut {
 	0% {
 		opacity:1;
@@ -180,7 +208,7 @@ header h1 {
   
 
 #background {
-	height: 40vh;
+	height: 60vh;
 }
 
 #social-links {
@@ -218,6 +246,7 @@ header h1 {
 footer {
 	background: var(--primary-color);
 	text-align: center;
+	height: 10vh;
 }
 
 @media screen and (max-width: 480px) {
@@ -227,6 +256,9 @@ footer {
 	}
 	header h1 {
 		font-size: 15vw;
+	}
+	header img {
+		width: 40vw;
 	}
 	#navbar {
 		display: none;
@@ -264,6 +296,9 @@ footer {
 	.profile_container p{
 		font-size: 0.8rem;
 	}
+	/* header h1 {
+		font-size: 11vw;
+	} */
 }
 
 /* Dropdown Menu */
