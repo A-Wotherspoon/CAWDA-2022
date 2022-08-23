@@ -12,52 +12,66 @@
 	</head>
 	<body>
 		<nav id="navbar">
-			<a href="index.html"><img id="homeLogo" src="images/z.png"></a>
+			<a href="./index.html"><img id="homeLogo" src="images/z.png"></a>
 			<div class="link_container">
-				<a href="about.html">About</a>
-				<a href="projects.html">Projects</a>
-				<a href="blog.html" id="selected_link">Blog</a>
+				<a href="./about.html" >About</a>
+				<a href="./projects.html">Projects</a>
+				<a href="./blog.html" id="selected_link">Blog</a>
 			</div>
 		</nav>
 
-		<h1>Blog</h1>
-		<h2>Latest</h2>
-		<article class="blog_container">
-			<a href="blogs/blog1.html">
-				<img src"" alt="article1"/>
-				<h3>Article 1 Heading</h3>
-				<p>Date 1</p>
-			</a>
-		</article>
+		<nav id="navbar_mobile">
+			<input type="checkbox" id="mobile_toggle">
+			<label for="mobile_toggle" class="fas"></label>
+			<div class="mobile_link_container">
+				<a href="./index.html">Home</a>
+				<a href="./about.html" >About</a>
+				<a href="./projects.html" >Projects</a>
+				<a href="./blog.html" id="selected_link">Blog</a>
+			</div>
+			<div class="navbar_spacer"></div>
+		</nav>		
 
-		<h2>Previous</h2>
-		<article class="blog_container">
-			<a href="blogs/blog2.html">
-				<img src"" alt="article1"/>
-				<h3>Article 2 Heading</h3>
-				<p>Date 2</p></article>
-			</a>	
-		<article class="blog_container">
-			<a href="blogs/blog3.html">
-				<img src"" alt="article1"/>
-				<h3>Article 3 Heading</h3>
-				<p>Date 3</p>
-			</a>
-		</article>
-		<article class="blog_container">
-			<a href="blogs/blog4.html">
-				<img src"" alt="article1"/>
-				<h3>Article 4 Heading</h3>
-				<p>Date 4</p>
-			</a>
-		</article>
-		<article class="blog_container">
-			<a href="blogs/blog5.html">
-				<img src"" alt="article5"/>
-				<h3>Article 5 Heading</h3>
-				<p>Date 5</p>
-			</a>
-		</article>
+		
+		<main>
+			<h1>Blog</h1>
+			<h2>Latest</h2>
+			<article class="blog_container latest_blog">
+				<a href="./blogs/blog1.html">
+					<img src"" alt="article1"/>
+					<h3>Article 1 Heading</h3>
+					<p>Date 1</p>
+				</a>
+			</article>
 
+			<h2>Previous</h2>
+			<article class="blog_container">
+				<a href="./blogs/blog2.html">
+					<img src"" alt="article1"/>
+					<h3>Article 2 Heading</h3>
+					<p>Date 2</p></article>
+				</a>	
+			<article class="blog_container">
+				<a href="./blogs/blog3.html">
+					<img src"" alt="article1"/>
+					<h3>Article 3 Heading</h3>
+					<p>Date 3</p>
+				</a>
+			</article>
+			<article class="blog_container">
+				<a href="./blogs/blog4.html">
+					<img src"" alt="article1"/>
+					<h3>Article 4 Heading</h3>
+					<p>Date 4</p>
+				</a>
+			</article>
+			<article class="blog_container">
+				<a href="./blogs/blog5.html">
+					<img src"" alt="article5"/>
+					<h3>Article 5 Heading</h3>
+					<p>Date 5</p>
+				</a>
+			</article>
+		</main>
 	</body>
 </html>
