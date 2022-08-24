@@ -1,0 +1,46 @@
+/* #navbar {
+	display: flex;
+	position: fixed;
+
+} */
+
+h1 {
+	display: inline;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+main {
+	background: white;
+	margin: 2rem;
+	min-height: 60vh;
+	max-width: 1600px;
+	border-radius: 1rem;
+	box-shadow: 0.5rem 0.5rem 1rem grey;
+	padding: 1rem;
+}
+
+main img {
+	/* margin: 1rem; */
+	object-fit: cover;
+	max-width: 500px;
+	float: left;
+	padding: 0 1rem 1rem 0;
+}
+
+@media screen and (max-width: 768px) {
+	#navbar {
+		display: flex;
+	}
+	main img {
+		width: 100%;
+		padding: 0;
+		max-width: none;
+		float: none;
+		align-items: center;
+	}
+}
