@@ -76,7 +76,7 @@ h1 {
 }
 
 #mobile_toggle + label:before {
-	content: url(images/z-small.png); /* Bars */
+	content: url(./images/AW_small.png); /* Bars */
 }
 
 #mobile_toggle:checked ~ .mobile_link_container a{
@@ -84,7 +84,7 @@ h1 {
 }
 
 #mobile_toggle:checked + label:before {
-	content: url(images/z-small.png);
+	content: url(./images/AW_small.png);
 }
 
 .mobile_link_container a{

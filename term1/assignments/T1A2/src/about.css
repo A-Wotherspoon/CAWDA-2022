@@ -12,6 +12,10 @@ h2 {
 	text-align: center;
 }
 
+h2 a {
+	color: white;
+}
+
 #home {
 	background: var(--primary-color);
 	padding: 0;
@@ -45,15 +49,15 @@ input[type=checkbox]:checked + #home.fas::before {
 	width: 60%;
 	color: #fff;
 	overflow: hidden;
-  }
+}
   
-  input {
+input {
 	position: absolute;
 	opacity: 0;
 	z-index: -1;
-  }
+}
   
-  label {
+label {
 	position: relative;
 	display: block;
 	padding: 0 0 0 1em;
@@ -64,13 +68,13 @@ input[type=checkbox]:checked + #home.fas::before {
 	cursor: pointer;
 	border-radius: 0.7rem;
 	/* text-align: center; */
-  }
+}
   
-  .blue label {
+.blue label {
 	background: #2980b9;
-  }
+}
   
-  .tab-content {
+.tab-container {
 	max-height: 0;
 	overflow: hidden;
 	background: #1abc9c;
@@ -79,26 +83,35 @@ input[type=checkbox]:checked + #home.fas::before {
 	transition: max-height .35s;
 	border-radius: 0 0 0.7rem 0.7rem;
 	margin: 0 1rem 0rem 1rem;
-	display: flex;
-	
-  }
-  
-  .blue .tab-content {
+}
+
+.tab-img-container img {
+	object-fit: cover;
+	max-width: 40%;
+	float: left;
+	margin: 1rem;
+}
+
+.tab-content {
+	margin: 1rem;
+}
+
+.tab-content ul  {
+	padding: 1rem;
+	list-style-position: inside;
+}
+
+.blue .tab-container {
 	background: #3498db;
-  }
-  
-  .tab-content p {
-	margin: 1em;
-	text-align: justify;
-  }
+}
 
   /* :checked */
-  input:checked ~ .tab-content {
+input:checked ~ .tab-container {
 	max-height: 100vh;
-  }
+}
   
   /* Icon */
-  label::before{
+label::before{
 	content: ' ';
 	display: inline-block;
   
@@ -110,11 +123,11 @@ input[type=checkbox]:checked + #home.fas::before {
 	transform: translateY(-2px);
 
 	transition: transform .2s ease-out;
-  }
+}
 
-  input[type=checkbox]:checked + label::before {
+input[type=checkbox]:checked + label::before {
 	transform: rotate(90deg) translateX(-3px);
-  }
+}
   
 @media screen and (max-width: 480px) {
 	h1 {
@@ -125,5 +138,16 @@ input[type=checkbox]:checked + #home.fas::before {
 	}
 	.tab {
 		width: 95%;
+	}
+	.tab-img-container img {
+		max-width: 90%;
+		width: 90%;
+	}
+
+}
+
+@media screen and (max-width: 900px) and (min-width:481px) {
+	.tab {
+		width: 80%;
 	}
 }
