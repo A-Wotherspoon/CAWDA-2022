@@ -6,6 +6,14 @@
 
 h1 {
 	display: inline;
+	color: var(--secondary-highlight-color);
+	font-size: 2.5rem;
+}
+
+h2 {
+	text-align: justify;
+	color: var(--secondary-highlight-color);
+	color: black;
 }
 
 body {
@@ -15,12 +23,12 @@ body {
 }
 
 main {
-	background: white;
+	background: var(--secondary-background-color);
 	margin: 2rem;
 	min-height: 60vh;
 	max-width: 1600px;
 	border-radius: 1rem;
-	box-shadow: 0.5rem 0.5rem 1rem grey;
+	box-shadow: 0.3rem 0.3rem 0.1rem var(--primary-highlight-color);
 	padding: 1rem;
 }
 

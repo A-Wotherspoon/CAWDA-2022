@@ -8,16 +8,17 @@ main {
 	flex-direction: column;
 }
 
-h2 {
+/* h2 {
+	width: 100%;
 	text-align: center;
-}
+} */
 
 h2 a {
 	color: white;
 }
 
 #home {
-	background: var(--primary-color);
+	background: var(--primary-background-color);
 	padding: 0;
 }
 
@@ -45,9 +46,8 @@ input[type=checkbox]:checked + #home.fas::before {
 /* Accordian css */
 .tab {
 	position: relative;
-	margin-bottom: 1px;
+	/* margin-bottom: 1px; */
 	width: 60%;
-	color: #fff;
 	overflow: hidden;
 }
   
@@ -62,22 +62,24 @@ label {
 	display: block;
 	padding: 0 0 0 1em;
 	margin: 0.25rem 0 0 0;
-	background: #16a085;
 	font-weight: bold;
 	line-height: 3;
 	cursor: pointer;
 	border-radius: 0.7rem;
 	/* text-align: center; */
+	color: black;
+	font-size: 1.25rem;
 }
   
 .blue label {
-	background: #2980b9;
+	/* background: var(--secondary-background-color); */
+	background: var(--secondary-background-color);
+	background: #7c98a5;
 }
   
 .tab-container {
 	max-height: 0;
 	overflow: hidden;
-	background: #1abc9c;
 	-webkit-transition: max-height .35s;
 	-o-transition: max-height .35s;
 	transition: max-height .35s;
@@ -94,6 +96,8 @@ label {
 
 .tab-content {
 	margin: 1rem;
+	color: black;
+	font-size: 1.2rem;
 }
 
 .tab-content ul  {
@@ -102,12 +106,12 @@ label {
 }
 
 .blue .tab-container {
-	background: #3498db;
+	background: #8EAEBD;
 }
 
   /* :checked */
 input:checked ~ .tab-container {
-	max-height: 100vh;
+	max-height: 100%;
 }
   
   /* Icon */

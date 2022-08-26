@@ -9,17 +9,12 @@ body article a {
 	color: black;
 }
 
-
-h2 {
-	width: 100%;
-	text-align: center;
-}
-
 .blog_container {
 	width: 40vw;
-	box-shadow: 0.5rem 0.5rem 1rem grey;
+	box-shadow: 0.3rem 0.3rem 0.1rem var(--primary-highlight-color);
 	border-radius: 1rem;
 	margin: 0.5rem;
+	background: var(--secondary-background-color);
 }
 
 .blog_container a {
@@ -34,10 +29,6 @@ h2 {
 	width: 100%;
 	border-radius: 1rem 1rem 0 0;
 	/* max-height: ; */
-}
-
-.blog_container h3 {
-	padding: 0.5rem;
 }
 
 .blog_container p {

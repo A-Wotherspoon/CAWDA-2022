@@ -6,9 +6,11 @@ main {
 	align-content: center;
 }
 
-h2 {
+/* h3 {
 	padding: 0.5rem;
-}
+	font-size: 1.5rem;
+	color: var(--primary-background-color);
+} */
 
 p {
 	padding: 0.5rem;
@@ -16,10 +18,10 @@ p {
 
 .project_container {
 	flex: 1;
-	/* min-width: 200px; */
 	margin: 1rem;
-	box-shadow: 0.5rem 0.5rem 1rem grey;
+	box-shadow: 0.3rem 0.3rem 0.1rem var(--primary-highlight-color);
 	border-radius: 1rem;
+	background: var(--secondary-background-color);
 }
 
 .project_container img {
@@ -27,9 +29,12 @@ p {
 	width: 100%;
 	border-radius: 0.75rem;
 }
+
+
 .project_links {
 	display: flex;
 	justify-content: end;
+	margin-top: auto;
 	/* margin: 1rem; */
 }
 
@@ -54,9 +59,3 @@ p {
 		min-width: 45%
 	}
 }
-
-/* @media screen and (min-width: 1200px) {
-	.project_container {
-		min-width: 45vw;
-	}
-} */
