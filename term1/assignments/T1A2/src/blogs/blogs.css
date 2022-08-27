@@ -1,9 +1,3 @@
-/* #navbar {
-	display: flex;
-	position: fixed;
-
-} */
-
 h1 {
 	display: inline;
 	color: var(--secondary-highlight-color);
@@ -33,7 +27,6 @@ main {
 }
 
 main img {
-	/* margin: 1rem; */
 	object-fit: cover;
 	max-width: 500px;
 	float: left;
@@ -44,7 +37,7 @@ main img {
 	#navbar {
 		display: flex;
 	}
-	main img {
+	 main img { /*in mobile mode, let the blog image take up full container width */
 		width: 100%;
 		padding: 0;
 		max-width: none;

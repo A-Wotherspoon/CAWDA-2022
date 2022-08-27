@@ -4,6 +4,7 @@ main {
 	justify-content: center;
 }
 
+/* as whole container for blog link is an anchor tag, overwrite the formatting */
 body article a {
 	text-decoration: none;
 	color: black;
@@ -28,22 +29,25 @@ body article a {
 	object-fit: cover;
 	width: 100%;
 	border-radius: 1rem 1rem 0 0;
-	/* max-height: ; */
 }
 
 .blog_container p {
 	text-align: justify;
 	margin: 0.5rem;
+	font-weight: 700;
 }
 
+/* always have content bottom of container*/
 .blog_container a div {
 	margin-top: auto;
-
 }
 
+
+
+/* media transitions so that each blog container fits responsively */
 @media screen and (max-width: 480px) {
 	h1 {
-		display: inline;
+		display: inline; /*page title to display when navbar is in mobile mode */
 	}
 }
 
@@ -54,7 +58,6 @@ body article a {
 	.latest_blog {
 		width: 80%;
 	}
-
 }
 
 @media screen and (max-width: 1000px) and (min-width:601px) {
@@ -65,7 +68,6 @@ body article a {
 		width: 60vw;
 	}
 }
-
 
 @media screen and (min-width:1001px) {
 	.blog_container {

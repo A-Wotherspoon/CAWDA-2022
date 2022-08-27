@@ -7,12 +7,18 @@
 		<title>Portfolio</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
 		<link rel="icon" type="image/x-icon" href="/images/favicon.png">
 		<link rel="stylesheet" href="./style.css">
 		<link rel="stylesheet" href="./index.css">
 	</head>
 	<body class="landing">
-		<nav id="navbar">
+		<!-- Desktop/mobile navbar -->
+		<nav id="navbar"> <!--desktop navbar is hidden while in mobile dimensions -->
 			<a href="./index.html"><img id="homeLogo" src="./images/AW.png"></a>
 			<div class="link_container">
 				<a href="./about.html">About</a>
@@ -20,8 +26,7 @@
 				<a href="./blog.html">Blog</a>
 			</div>
 		</nav>
-
-		<nav id="navbar_mobile">
+		<nav id="navbar_mobile"> <!--mobile navbar is hidden while not in mobile dimensions -->
 			<input type="checkbox" id="mobile_toggle">
 			<label for="mobile_toggle" class="fas"></label>
 			<div class="mobile_link_container">
@@ -40,34 +45,29 @@
 			</div>
 			<div class="header_content">
 				<h1>Adrian Wotherspoon</h1>
-				<div class="fadeIn">Web Developer</div>
+				<!-- transition between previous and current career aspirations -->
+				<div class="fadeIn">Web Developer</div> 
 				<div class="fadeOut">Electrical Engineer</div>
 			</div>
-			
 		</header>
-			
 
-		<!-- Hero image -->
+		<!-- Empty div to show background during scropp -->
 		<section id="background">
 			<div class="arrow_container">
-				<a href="#social-links"><i class="down_arrow"></i></p></a>
+				<a href="#social-links"><i class="down_arrow"></i></p></a> <!-- arrow to skip to the bottom -->
 			</div>
 		</section>
 
-		<!-- my story -->
+		<!-- my story wrapped in collapsible window -->
 		<main>
 			<div class="wrap-collabsible">
 				<input id="collapsible" class="toggle" type="checkbox">
 				<label for="collapsible" class="lbl-toggle">My Story</label>
 				<div class="collapsible-content">
 				  <div class="content-inner">
-					<p>
-					  QUnit is by calling one of the object that are embedded in JavaScript, and faster JavaScript program could also used with
-					  its elegant, well documented, and functional programming using JS, HTML pages Modernizr is a popular browsers without
-					  plug-ins. Test-Driven Development.
-					  <br></br><br></br><br></br><br></br>
-					  testtest
-					</p>
+					<p><strong>
+					  As an electrical engineer working in the renewables energy and high voltage rail industry and everywhere inbetween, after 4 years I am looking for a new challenge and new skills to develop. Drawn to continual learning and creative problem solving, I am looking for opportunities for a new start in emerging technology sectors. 
+					</strong></p>
 				  </div>
 				</div>
 			</div>
@@ -75,18 +75,15 @@
 
 		<!-- social media -->
 		<section id="social-links">
-			<div>
-				<div>
-					<a href=""><img src="./images/github.svg" alt="github"/></a>
-					<a href=""><img src="./images/linkedin.svg" alt="Linkedin"/></a>
-					<a href=""><img src="./images/mail.svg" alt="Email"/></a>
-					<a href=""><img src="./images/instagram.svg" alt="Instagram"/></a>
-					
+			<div> <!--double div to keep links clumped to the center -->
+				<div> <!--links to social media -->
+					<a href="https://github.com/A-Wotherspoon"><img src="./images/github.svg" alt="github"/></a>
+					<a href="https://www.linkedin.com/in/adrian-wotherspoon-951748140/"><img src="./images/linkedin.svg" alt="Linkedin"/></a>
+					<a href="mailto:adrian.wotherspoon@gmail.com"><img src="./images/mail.svg" alt="Email"/></a>
+					<a href="https://www.instagram.com/a_wotherspoon/"><img src="./images/instagram.svg" alt="Instagram"/></a>
 				</div>
 			</div>
 		</section>
-
 		<footer><p>&copy; 2022 Adrian Wotherspoon</p></footer>
-
 	</body>
 </html>

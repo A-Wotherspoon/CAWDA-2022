@@ -1,5 +1,3 @@
-/* Acordeon styles */
-
 main {
 	display: flex;
 	flex-wrap: wrap;
@@ -8,20 +6,16 @@ main {
 	flex-direction: column;
 }
 
-/* h2 {
-	width: 100%;
-	text-align: center;
-} */
-
+/* recolor download link for contrast */
 h2 a {
 	color: white;
 }
 
 #home {
 	background: var(--primary-background-color);
-	padding: 0;
 }
 
+/* overwrite checkbox styling done for accordian windows */
 #home::before {
 	border: none;
 	margin: 0;
@@ -32,51 +26,43 @@ input[type=checkbox]:checked + #home.fas::before {
 	transform: none;
 }
 
-.flex_spacing {
-	flex: 1;
-}
-
+/* wrapper for all accordian windowns */
 .wrapper {
-	flex: 8;
+	/* flex: 8; */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-/* Accordian css */
+/* collapsible menu title container*/
 .tab {
 	position: relative;
-	/* margin-bottom: 1px; */
 	width: 60%;
 	overflow: hidden;
 }
-  
+
 input {
 	position: absolute;
 	opacity: 0;
 	z-index: -1;
 }
-  
+ 
+/* collapsible menu title formatting*/
 label {
 	position: relative;
 	display: block;
 	padding: 0 0 0 1em;
 	margin: 0.25rem 0 0 0;
-	font-weight: bold;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
 	line-height: 3;
 	cursor: pointer;
 	border-radius: 0.7rem;
-	/* text-align: center; */
 	color: black;
-	font-size: 1.25rem;
-}
-  
-.blue label {
-	/* background: var(--secondary-background-color); */
-	background: var(--secondary-background-color);
 	background: #7c98a5;
 }
   
+/* collapsible menu content container */
 .tab-container {
 	max-height: 0;
 	overflow: hidden;
@@ -85,8 +71,10 @@ label {
 	transition: max-height .35s;
 	border-radius: 0 0 0.7rem 0.7rem;
 	margin: 0 1rem 0rem 1rem;
+	background: #8EAEBD;
 }
 
+/* content formatting */
 .tab-img-container img {
 	object-fit: cover;
 	max-width: 40%;
@@ -105,16 +93,12 @@ label {
 	list-style-position: inside;
 }
 
-.blue .tab-container {
-	background: #8EAEBD;
-}
-
   /* :checked */
 input:checked ~ .tab-container {
 	max-height: 100%;
 }
   
-  /* Icon */
+  /* arrow icon css */
 label::before{
 	content: ' ';
 	display: inline-block;
@@ -129,13 +113,15 @@ label::before{
 	transition: transform .2s ease-out;
 }
 
+ /* rotate arrow icon when menu clicked */
 input[type=checkbox]:checked + label::before {
 	transform: rotate(90deg) translateX(-3px);
 }
   
+/* media transition for mobile devices, resizing windowns and accordian menus*/
 @media screen and (max-width: 480px) {
 	h1 {
-		display: inline;
+		display: inline; /*page title to display when navbar is in mobile mode */
 	}
 	.flex_spacing {
 		flex: 0;
@@ -143,13 +129,14 @@ input[type=checkbox]:checked + label::before {
 	.tab {
 		width: 95%;
 	}
-	.tab-img-container img {
+	.tab-img-container img { /*in mobile mode, let the about image take up full container width */
 		max-width: 90%;
 		width: 90%;
 	}
 
 }
 
+/* media transition for medium devices */
 @media screen and (max-width: 900px) and (min-width:481px) {
 	.tab {
 		width: 80%;

@@ -1,7 +1,8 @@
+/* Landing page has different background image configuration */
 .landing {
 	display: flex;
 	flex-direction: column;
-	background: url(images/elec.jpg) darkgreen no-repeat;
+	background: url(images/elec.jpg) var(--primary-background-color) no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: 0 10vh;
@@ -13,10 +14,10 @@ header {
 	display: flex;
 	justify-content: center;
 	min-height: 10vh;
-	background: var(--primary-color);
-
+	background: var(--primary-background-color);
 }
 
+/* CSS for portrait profile image */
 header img {
 	border-radius: 50%;
 	border: 2px solid black;
@@ -30,6 +31,7 @@ header h1 {
 	margin-top: 1rem;
 	font-size: min(10vw,120px);
 	color: var(--secondary-background-color);
+	font-weight: 400;
 }
 
 
@@ -42,11 +44,10 @@ header h1 {
 }
 
 .profile_container p {
-	padding: 1rem 0rem 1rem 0rem;
-	color: var(--secondary-color);
+	padding: 1rem 1rem 0 0;
+	color: var(--secondary-background-color);
 	font-style: italic;
 	text-align: end;
-
 }
 
 .header_content {
@@ -54,6 +55,7 @@ header h1 {
 	padding: 1rem ;
 }
 
+/* Faded in 'web developer' text*/
 .fadeIn {
 	font-size: min(7vw,80px);
 	color:var(--primary-highlight-color);
@@ -61,8 +63,10 @@ header h1 {
 	animation: fadeIn ease 8s;
 	animation-fill-mode: forwards;
 	animation-delay: 3s;
+	font-family: 'Share Tech Mono', monospace, sans-serif;
 }
 
+/* Faded out 'electrical engineer text' */
 .fadeOut {
 	font-size: min(7vw,80px);
 	color:red;
@@ -71,9 +75,10 @@ header h1 {
 	animation-fill-mode: forwards;
 }
 
+/* Arrow css to skip to the bottom */
 .arrow_container {
 	width: 100vw;
-	background: var(--primary-color);
+	background: var(--primary-background-color);
 	text-align: center;
 	padding: 0.5rem;
 	transition: ;
@@ -89,6 +94,7 @@ header h1 {
 	
   }
 
+/* transitions for faded in and out text in header */
 @keyframes fadeOut {
 	0% {
 		opacity:1;
@@ -108,15 +114,17 @@ header h1 {
   }
   
 
+/* empty div to show background image via scroll */
 #background {
 	height: 60vh;
 }
 
+/* social media contact links */
 #social-links {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	background: var(--primary-color);
+	background: var(--primary-background-color);
 	padding-top: 1rem;
 }
 
@@ -135,7 +143,6 @@ header h1 {
 }
 
 #social-links div img {
-	/* padding: 0 0.75rem 1rem 0.75rem; */
 	height: 40px;
 	margin: 0 0.5rem;
 	filter: invert(1);
@@ -147,41 +154,41 @@ header h1 {
 }
 
 
-/* Dropdown Menu */
+/* Dropdown window via toggleable checkbox*/
 .wrap-collabsible {
 	margin-bottom: 1.2rem 0;
-  }
+}
   
-  input[type='checkbox'] {
+input[type='checkbox'] {
 	display: none;
-  }
+}
   
-  .lbl-toggle {
+.lbl-toggle {
 	display: block;
-  
+	padding: 1rem;
 	font-weight: bold;
-	font-family: monospace;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-style: normal;
 	font-size: 2rem;
 	text-transform: uppercase;
 	text-align: center;
 	text-decoration: underline;
   
-	padding: 1rem;
-  
-	/* color: var(--secondary-highlight-color); */
 	color: var(--secondary-background-color);
 	background: var(--primary-background-color);
   
 	cursor: pointer;
   
 	transition: all 0.25s ease-out;
-  }
+}
   
-  .lbl-toggle:hover {
+.lbl-toggle:hover {
 	color: var(--secondary-highlight-color);
-  }
+}
   
-  .lbl-toggle::before {
+/* Arrow icon for collapsible window */
+.lbl-toggle::before {
 	content: ' ';
 	display: inline-block;
   
@@ -193,36 +200,38 @@ header h1 {
 	transform: translateY(-2px);
 
 	transition: transform .2s ease-out;
-  }
-  
-  .toggle:checked + .lbl-toggle::before {
+}
+
+/* rotate arrow to face down before when clicked */
+.toggle:checked + .lbl-toggle::before {
 	transform: rotate(90deg) translateX(-3px);
-  }
+}
   
-  .collapsible-content {
+.collapsible-content {
 	max-height: 0px;
 	overflow: hidden;
 	transition: max-height .25s ease-in-out;
-  }
-  
-  .toggle:checked + .lbl-toggle + .collapsible-content {
-	max-height: 100vh;
-  }
-  /* #8EAEBD */
-  .collapsible-content .content-inner {
+}
 
+/* collapsible content windown to show full content */
+.toggle:checked + .lbl-toggle + .collapsible-content {
+	max-height: 100vh;
+}
+
+.collapsible-content .content-inner {
 	background: rgba(142, 174, 189, 0.7);
 	padding: 4rem 4rem;
 	display: flex;
 	justify-content: center;
-  }
+}
 
-  .collapsible-content .content-inner p {
+.collapsible-content .content-inner p {
 	max-width: 600px;
 	font-size: 1.5rem;
-  }
+}
 
-  @media screen and (max-width: 480px) {
+/* media transition for mobile devices */
+@media screen and (max-width: 480px) {
 	header {
 		padding: 0rem;
 		flex-direction: column-reverse;
@@ -256,13 +265,12 @@ header h1 {
 	}
 }
 
+/* media transition for medium sized devices */
 @media screen and (max-width: 768px) and (min-width:481px) {
-
 	.profile_container p{
 		font-size: 0.8rem;
 	}
 	.collapsible-content .content-inner p {
 		font-size: 1.2rem;
 	}
-
 }

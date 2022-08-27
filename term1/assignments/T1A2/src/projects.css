@@ -6,12 +6,6 @@ main {
 	align-content: center;
 }
 
-/* h3 {
-	padding: 0.5rem;
-	font-size: 1.5rem;
-	color: var(--primary-background-color);
-} */
-
 p {
 	padding: 0.5rem;
 }
@@ -30,21 +24,22 @@ p {
 	border-radius: 0.75rem;
 }
 
-
+/* container for repo and demo links */
 .project_links {
 	display: flex;
 	justify-content: end;
 	margin-top: auto;
-	/* margin: 1rem; */
 }
 
 .project_links a {
 	margin: 1rem;
+	font-weight: bold;
 }
 
+/* media transitions so that each project container fits responsively */
 @media screen and (max-width: 480px) {
 	h1 {
-		display: inline;
+		 display: inline; /*page title to display when navbar is in mobile mode */
 	}
 }
 
