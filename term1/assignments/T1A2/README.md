@@ -3,6 +3,7 @@
 
 ### [Netlify Link](https://awotherspoont1a2.netlify.app/index.html)
 
+### [Presentation Video](https://youtu.be/5R70h1TfxTw)
 ---
 ## Purpose and Intended Audience
 The purpose of this website is to demonstrate my abilities to a target audience of prospective employers in technology industries, as an individual making a transition from electrical engineering to web development. This website aims to achieve this by a combination of showing my technical skills and past experience, while building a personal brand.
