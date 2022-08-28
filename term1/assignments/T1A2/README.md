@@ -1,4 +1,4 @@
-# T1A2 - Portfolio resources
+# T1A2 - Portfolio docs
 ### [github repo](https://github.com/A-Wotherspoon/CAWDA-2022/tree/main/term1/assignments/T1A2)
 
 ### [Netlify Link](https://awotherspoont1a2.netlify.app/index.html)
@@ -21,49 +21,49 @@ The themes of the website was designed around the personal brand I wish to displ
 
 
 ## Site Map
-![Site Map](./resources/sitemap.JPG)
+![Site Map](./docs/sitemap.JPG)
 
 ## Screenshots
 
 ### Home page
 
 #### Wireframes:
-![Home Page Wireframe](./resources/homeWF.JPG)
+![Home Page Wireframe](./docs/homeWF.JPG)
 
 #### Site:
-![Home Page Screenshot](./resources/homeSS.JPG)
+![Home Page Screenshot](./docs/homeSS.JPG)
 
 ### About page
 
 #### Wireframes:
-![About Page Wireframe](./resources/aboutWF.JPG)
+![About Page Wireframe](./docs/aboutWF.JPG)
 
 #### Site:
-![About Page Screenshot](./resources/aboutSS.JPG)
+![About Page Screenshot](./docs/aboutSS.JPG)
 
 ### Projects page
 
 #### Wireframes:
-![Projects Page Wireframe](./resources/projectsWF.JPG)
+![Projects Page Wireframe](./docs/projectsWF.JPG)
 
 #### Site:
-![Projects Page Screenshot](./resources/projectsSS.JPG)
+![Projects Page Screenshot](./docs/projectsSS.JPG)
 
 ### Blogs page
 
 #### Wireframes:
-![Blogs Page Wireframe](./resources/blogWF.JPG)
+![Blogs Page Wireframe](./docs/blogWF.JPG)
 
 #### Site:
-![Blogs Page Screenshot](./resources/blogSS.JPG)
+![Blogs Page Screenshot](./docs/blogSS.JPG)
 
 ### Example blog post
 
 #### Wireframes:
-![Sample Blog Wireframe](./resources/sampleblogWF.jpg)
+![Sample Blog Wireframe](./docs/sampleblogWF.jpg)
 
 #### Site:
-![Sample Blog Screenshot](./resources/sampleblogSS.JPG)
+![Sample Blog Screenshot](./docs/sampleblogSS.JPG)
 
 ## Technology Stack
 This portfolio site has been made with HTML5 and CSS3, and hosted on Netlify. The site will be updated with projects and added JavaScript functionality as developed through the boot camp.
