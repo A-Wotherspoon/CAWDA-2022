@@ -1,7 +1,7 @@
 # T1A2 - Portfolio documentation
 ### [github repo](https://github.com/A-Wotherspoon/CAWDA-2022/tree/main/term1/assignments/T1A2)
 
-### [Netlify Link](https://awotherspoont1a2.netlify.app/blog.html)
+### [Netlify Link](https://awotherspoont1a2.netlify.app/index.html)
 
 ---
 ## Purpose
@@ -53,7 +53,7 @@ This portfolio website is designed to showcase my capabilities of designing a re
 ![Sample Blog Wireframe](./documentation/sampleblogWF.jpg)
 
 #### Site:
-![Sample Blog Screenshot](./documentation/sampleblogSS.jpg)
+![Sample Blog Screenshot](./documentation/sampleblogSS.JPG)
 
 ## Technology Stack
 This portfolio site has been made with HTML5 and CSS3, and hosted on Netlify. The site will be updated with projects and added JavaScript functionality as developed through the boot camp.

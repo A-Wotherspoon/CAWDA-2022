@@ -8,6 +8,7 @@
 	background-position: 0 10vh;
 }
 
+/* Component 2 - homepage header */
 header {
 	width: 100%;
 	padding: 0rem 0rem 1rem 0rem;
@@ -154,7 +155,7 @@ header h1 {
 }
 
 
-/* Dropdown window via toggleable checkbox*/
+/* Component 3 - Dropdown window via toggleable checkbox*/
 .wrap-collabsible {
 	margin-bottom: 1.2rem 0;
 }

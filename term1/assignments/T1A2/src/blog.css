@@ -10,6 +10,7 @@ body article a {
 	color: black;
 }
 
+/* Component 7 - blog cards */
 .blog_container {
 	width: 40vw;
 	box-shadow: 0.3rem 0.3rem 0.1rem var(--primary-highlight-color);

@@ -52,6 +52,8 @@ a, p, ul, ol {
 	font-style: normal;
 }
 
+
+/* Component 1 - Navbar */
 #navbar {
 	display: flex;
 	justify-content: space-between;

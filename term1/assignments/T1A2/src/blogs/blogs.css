@@ -16,6 +16,7 @@ body {
 	align-items: center;
 }
 
+/* Component 8 - blog post card */
 main {
 	background: var(--secondary-background-color);
 	margin: 2rem;
