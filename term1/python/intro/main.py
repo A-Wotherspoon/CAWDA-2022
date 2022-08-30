@@ -1,0 +1,7 @@
+print('Hello world')
+print('Whats your name?')
+name = input()
+print('nice to meet you, '+name)
+age = input('What is your age?')
+year_of_birth = 2022 - int(age)
+print('you were born in '+str(year_of_birth))
